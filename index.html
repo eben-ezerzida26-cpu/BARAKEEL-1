@@ -288,6 +288,7 @@
             const cards = document.querySelectorAll(".testimonial-card"); // Récupère toutes les cartes de témoignages.
             const pagination = document.getElementById("carouselPagination"); // Récupère le conteneur des points de pagination.
             const emailLinks = document.querySelectorAll(".email-link[data-email]"); // Sélectionne les liens email à ouvrir intelligemment.
+            let isPaginationClick = false; // Empêche le point actif de clignoter pendant un clic de pagination.
 
             const formatCounterValue = (value, target) => { // Crée une fonction unique pour formater les valeurs animées.
                 if (target <= 25) return `${value} ans`; // Ajoute "ans" pour les années d'existence.
@@ -338,6 +339,7 @@
             }; // Termine la fonction des animations au scroll.
 
             const updateActiveDot = dots => { // Met à jour le point actif du carrousel.
+                if (isPaginationClick) return; // Ignore les mises à jour automatiques pendant un clic direct sur un point.
                 let activeIndex = 0; // Initialise l'index actif.
                 let minDistance = Infinity; // Initialise la distance minimale trouvée.
                 const wrapperLeft = wrapper.getBoundingClientRect().left; // Calcule une seule fois la position gauche du wrapper.
@@ -364,11 +366,12 @@
                         const wrapperRect = wrapper.getBoundingClientRect(); // Récupère la position actuelle du carrousel.
                         const cardRect = card.getBoundingClientRect(); // Récupère la position actuelle du témoignage ciblé.
                         const targetLeft = wrapper.scrollLeft + cardRect.left - wrapperRect.left - (wrapper.clientWidth - card.clientWidth) / 2; // Calcule la position exacte à atteindre.
+                        isPaginationClick = true; // Verrouille temporairement le point actif pour éviter un clignotement.
                         wrapper.style.scrollSnapType = "none"; // Désactive temporairement le snap pour éviter l'arrêt sur une carte intermédiaire.
                         wrapper.scrollTo({ left: Math.max(targetLeft, 0), behavior: "auto" }); // Va directement au commentaire lié au point cliqué.
                         pagination.querySelectorAll(".pagination-dot").forEach(dot => dot.classList.remove("active")); // Retire l'état actif des autres points.
                         button.classList.add("active"); // Active immédiatement le point cliqué.
-                        window.setTimeout(() => { wrapper.style.scrollSnapType = ""; }, 80); // Réactive le snap après le déplacement direct.
+                        window.setTimeout(() => { wrapper.style.scrollSnapType = ""; isPaginationClick = false; }, 120); // Réactive le snap et la mise à jour automatique après le déplacement direct.
                     }); // Termine l'écouteur du clic.
                     pagination.appendChild(button); // Ajoute le point dans la pagination.
                 }); // Termine la création des points.
@@ -411,5 +414,6 @@
     </script> <!-- Ferme le script principal de la page. -->
 </body> <!-- Ferme le contenu visible de la page. -->
 </html> <!-- Ferme le document HTML. -->
+
 
 
