@@ -1,4 +1,4 @@
-﻿/* --- CHARTE GRAPHIQUE INSTITUTIONNELLE & MODERNE --- */
+/* --- CHARTE GRAPHIQUE INSTITUTIONNELLE & MODERNE --- */
 :root {
     --primary-blue: #0b1a30;   /* Bleu nuit */
     --signature-violet: #5c2d91; /* Violet */
@@ -15,6 +15,54 @@
     margin: 0;
     padding: 0;
 }
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    var wrapper = document.getElementById("testimonialWrapper");
+    var container = document.getElementById("testimonialContainer");
+    var paginationZone = document.getElementById("carouselPagination");
+
+    if (wrapper && container && paginationZone) {
+        var cards = container.querySelectorAll(".testimonial-card");
+        
+        // 1. Génération automatique de la pagination (1 point par commentaire)
+        paginationZone.innerHTML = "";
+        cards.forEach(function (card, index) {
+            var dot = document.createElement("span");
+            dot.classList.add("dot");
+            if (index === 0) dot.classList.add("active-dot");
+            paginationZone.appendChild(dot);
+        });
+
+        var dots = paginationZone.querySelectorAll(".dot");
+
+        // 2. Détection par Intersection Observer (Suivi dynamique instantané)
+        var options = {
+            root: wrapper,
+            threshold: 0.6 // Devient actif dès que 60% de la carte est visible
+        };
+
+        var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    var indexActuel = entry.target.getAttribute("data-index");
+                    
+                    dots.forEach(function (dot, idx) {
+                        if (idx == indexActuel) {
+                            dot.classList.add("active-dot");
+                        } else {
+                            dot.classList.remove("active-dot");
+                        }
+                    });
+                }
+            });
+        }, options);
+
+        cards.forEach(function (card) {
+            observer.observe(card);
+        });
+    }
+});
+</script>
 body {
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     color: var(--text-dark);
@@ -934,15 +982,7 @@ footer {
     .fondateur-quote::before { display: none; }
     .hero-slider { height: 500px; }
 }
-/* Pagination des témoignages : style du premier index.html */
-.carousel-pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    margin-top: 30px;
-}
-
+/* Correctif minimal : pagination des témoignages sans modifier les autres styles */
 .carousel-pagination .pagination-dot {
     width: 12px;
     height: 12px;
@@ -954,17 +994,14 @@ footer {
     display: inline-block;
     flex: 0 0 auto;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.2s ease;
 }
 
 .carousel-pagination .pagination-dot:hover,
 .carousel-pagination .pagination-dot:focus-visible {
-    transform: scale(1.15);
     outline: none;
 }
 
 .carousel-pagination .pagination-dot.active {
     background: #1e3a8a;
-    transform: scale(1.3);
 }
-
