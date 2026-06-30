@@ -366,12 +366,21 @@
                         const wrapperRect = wrapper.getBoundingClientRect(); // Récupère la position actuelle du carrousel.
                         const cardRect = card.getBoundingClientRect(); // Récupère la position actuelle du témoignage ciblé.
                         const targetLeft = wrapper.scrollLeft + cardRect.left - wrapperRect.left - (wrapper.clientWidth - card.clientWidth) / 2; // Calcule la position exacte à atteindre.
+                        const maxScrollLeft = wrapper.scrollWidth - wrapper.clientWidth; // Calcule la limite maximale du défilement horizontal.
+                        const finalLeft = Math.min(Math.max(targetLeft, 0), maxScrollLeft); // Garde la position dans les limites du carrousel.
+
                         isPaginationClick = true; // Verrouille temporairement le point actif pour éviter un clignotement.
-                        wrapper.style.scrollSnapType = "none"; // Désactive temporairement le snap pour éviter l'arrêt sur une carte intermédiaire.
-                        wrapper.scrollTo({ left: Math.max(targetLeft, 0), behavior: "auto" }); // Va directement au commentaire lié au point cliqué.
+                        wrapper.style.scrollBehavior = "auto"; // Empêche l'ancienne animation CSS de créer un mouvement bizarre.
+                        wrapper.style.scrollSnapType = "none"; // Désactive temporairement le snap pour éviter l'arrêt intermédiaire.
+                        wrapper.scrollLeft = finalLeft; // Place directement le carrousel sur le commentaire demandé.
                         pagination.querySelectorAll(".pagination-dot").forEach(dot => dot.classList.remove("active")); // Retire l'état actif des autres points.
                         button.classList.add("active"); // Active immédiatement le point cliqué.
-                        window.setTimeout(() => { wrapper.style.scrollSnapType = ""; isPaginationClick = false; }, 120); // Réactive le snap et la mise à jour automatique après le déplacement direct.
+
+                        window.setTimeout(() => { // Attend que le navigateur ait appliqué la position finale.
+                            wrapper.style.scrollBehavior = ""; // Restaure le comportement CSS normal.
+                            wrapper.style.scrollSnapType = ""; // Restaure le snap pour le défilement manuel.
+                            isPaginationClick = false; // Réactive la mise à jour automatique du point actif.
+                        }, 120); // Délai court pour éviter tout clignotement.
                     }); // Termine l'écouteur du clic.
                     pagination.appendChild(button); // Ajoute le point dans la pagination.
                 }); // Termine la création des points.
@@ -414,6 +423,8 @@
     </script> <!-- Ferme le script principal de la page. -->
 </body> <!-- Ferme le contenu visible de la page. -->
 </html> <!-- Ferme le document HTML. -->
+
+
 
 
 
