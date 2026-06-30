@@ -1,0 +1,415 @@
+﻿<!DOCTYPE html> <!-- Déclare le document comme une page HTML5. -->
+<html lang="fr"> <!-- Indique que la langue principale de la page est le français. -->
+<head> <!-- Ouvre l'en-tête technique de la page. -->
+    <meta charset="UTF-8"> <!-- Utilise l'encodage UTF-8 pour afficher correctement les accents. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Rend la page responsive sur mobile et tablette. -->
+    <meta name="description" content="Complexe Scolaire Barakeel : préscolaire, primaire, postprimaire et secondaire à Ouagadougou."> <!-- Ajoute une description utile pour le référencement. -->
+    <title>Complexe Scolaire Barakeel</title> <!-- Définit le titre affiché dans l'onglet du navigateur. -->
+
+    <link rel="icon" type="image/jpeg" href="Logo Barakeel.jpg"> <!-- Charge l'icône du site dans l'onglet du navigateur. -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com"> <!-- Prépare la connexion au CDN pour accélérer le chargement des icônes. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> <!-- Charge Font Awesome pour les icônes utilisées dans la page. -->
+    <link rel="stylesheet" href="style.css"> <!-- Charge la feuille de style principale du site. -->
+</head> <!-- Ferme l'en-tête technique de la page. -->
+<body> <!-- Ouvre le contenu visible de la page. -->
+
+    <div class="citation-top-bar"> <!-- Affiche une barre de citation en haut de page. -->
+        <strong>Citation de la semaine :</strong> <!-- Met en avant le libellé de la citation. -->
+        <span>"L'éducation est l'arme la plus puissante pour changer le monde." - Nelson Mandela</span> <!-- Affiche la citation corrigée avec les accents. -->
+    </div> <!-- Ferme la barre de citation. -->
+
+    <header class="site-header"> <!-- Ouvre l'en-tête principal du site. -->
+        <a href="index.html" class="logo-box" aria-label="Retour à l'accueil"> <!-- Rend le logo cliquable vers l'accueil. -->
+            <img src="Logo Barakeel.jpg" alt="Logo du Complexe Scolaire Barakeel" class="logo-img" width="80" height="80"> <!-- Affiche le logo avec dimensions pour éviter les décalages au chargement. -->
+            <div class="brand-info"> <!-- Regroupe le nom de l'école et son slogan. -->
+                <span class="logo-text">COMPLEXE SCOLAIRE BARAKEEL</span> <!-- Affiche le nom officiel de l'établissement. -->
+                <span class="header-slogan">Discipline - Travail - Réussite</span> <!-- Affiche le slogan de l'établissement. -->
+            </div> <!-- Ferme le bloc d'identité de marque. -->
+        </a> <!-- Ferme le lien du logo. -->
+        <nav class="main-nav" aria-label="Navigation principale"> <!-- Ouvre le menu principal accessible. -->
+            <a href="index.html" class="active" aria-current="page">Accueil</a> <!-- Lien vers la page d'accueil actuellement active. -->
+            <a href="maternelle.html">Préscolaire</a> <!-- Lien vers la page du cycle préscolaire. -->
+            <a href="primaire.html">Primaire</a> <!-- Lien vers la page du cycle primaire. -->
+            <a href="college.html">Postprimaire</a> <!-- Lien vers la page du cycle postprimaire. -->
+            <a href="lycee.html">Secondaire</a> <!-- Lien vers la page du cycle secondaire. -->
+            <a href="contact.html">Contact</a> <!-- Lien vers la page de contact. -->
+        </nav> <!-- Ferme le menu principal. -->
+    </header> <!-- Ferme l'en-tête principal du site. -->
+
+    <main> <!-- Ouvre le contenu principal de la page. -->
+        <section class="hero-slider" aria-label="Présentation du Complexe Scolaire Barakeel"> <!-- Ouvre la section héro avec slider visuel. -->
+            <div class="slides-container" aria-hidden="true"> <!-- Contient les images décoratives du slider. -->
+                <div class="slide"></div> <!-- Première image ou couche du slider gérée en CSS. -->
+                <div class="slide"></div> <!-- Deuxième image ou couche du slider gérée en CSS. -->
+                <div class="slide"></div> <!-- Troisième image ou couche du slider gérée en CSS. -->
+            </div> <!-- Ferme le conteneur des slides. -->
+            <div class="hero-content"> <!-- Regroupe le texte principal affiché sur le slider. -->
+                <h1>Construire un parcours d'excellence dès le premier pas</h1> <!-- Titre principal de la page. -->
+                <p>Une éducation centrée sur la discipline, l'épanouissement, la culture de l'excellence et le développement individuel de chaque élève.</p> <!-- Présente la promesse éducative de l'école. -->
+                <a href="fiche-de-renseignement.pdf" target="_blank" rel="noopener" class="btn-action">Fiche de renseignement</a> <!-- Ouvre le PDF dans un nouvel onglet de façon sécurisée. -->
+            </div> <!-- Ferme le contenu de la section héro. -->
+        </section> <!-- Ferme la section héro. -->
+
+        <section class="mot-fondateur reveal" aria-labelledby="fondateur-title"> <!-- Ouvre la section du mot du fondateur avec animation au scroll. -->
+            <div class="fondateur-img-box"> <!-- Contient la photo du fondateur. -->
+                <img src="images/fondateur.jpg" alt="Fondateur de l'École Barakeel" loading="lazy"> <!-- Charge la photo du fondateur avec lazy-loading. -->
+            </div> <!-- Ferme le conteneur de l'image du fondateur. -->
+            <div class="fondateur-message"> <!-- Contient le message institutionnel du fondateur. -->
+                <h2 id="fondateur-title">Le Mot du Fondateur</h2> <!-- Titre accessible de la section. -->
+                <p class="fondateur-quote">"Notre mission fondamentale à l'École BARAKEEL est de façonner des esprits curieux, outillés et dotés d'une intégrité morale forte. Chaque enfant qui franchit nos portes possède un potentiel unique que notre corps enseignant s'efforce de révéler au quotidien."</p> <!-- Citation principale du fondateur. -->
+                <p class="fondateur-description">Depuis 20 ans, nous conjuguons rigueur académique et bienveillance pour offrir un cadre d'apprentissage stimulant, préparant ainsi nos élèves à devenir les leaders de demain.</p> <!-- Complète le message avec l'expérience de l'école. -->
+                <p class="fondateur-nom">Nom du Fondateur</p> <!-- Affiche le nom du fondateur. -->
+                <p class="fondateur-titre">Fondateur & Directeur Général</p> <!-- Affiche la fonction du fondateur. -->
+            </div> <!-- Ferme le bloc du message du fondateur. -->
+        </section> <!-- Ferme la section du fondateur. -->
+
+        <section class="stats-banner" aria-label="Chiffres clés de l'établissement"> <!-- Ouvre la section des statistiques. -->
+            <article class="stat-box highlight reveal"> <!-- Ouvre la statistique sur l'ancienneté. -->
+                <i class="fa-solid fa-hourglass-half" aria-hidden="true"></i> <!-- Affiche l'icône du temps. -->
+                <h2 class="counter" data-target="20">0</h2> <!-- Valeur animée des années d'existence. -->
+                <p>D'existence</p> <!-- Libellé principal de la statistique. -->
+                <span class="stat-subtext">Innovation & Stabilité</span> <!-- Complément de la statistique. -->
+            </article> <!-- Ferme la statistique sur l'ancienneté. -->
+            <article class="stat-box highlight reveal"> <!-- Ouvre la statistique sur les élèves formés. -->
+                <i class="fa-solid fa-user-graduate" aria-hidden="true"></i> <!-- Affiche l'icône des diplômés. -->
+                <h2 class="counter" data-target="15000">0</h2> <!-- Valeur animée du nombre d'élèves formés. -->
+                <p>Élèves formés</p> <!-- Libellé principal de la statistique. -->
+                <span class="stat-subtext">Parcours d'excellence</span> <!-- Complément de la statistique. -->
+            </article> <!-- Ferme la statistique sur les élèves formés. -->
+            <article class="stat-box reveal"> <!-- Ouvre la statistique du CEP. -->
+                <i class="fa-solid fa-certificate" aria-hidden="true"></i> <!-- Affiche l'icône de certification. -->
+                <h2 class="counter" data-target="100">0</h2> <!-- Valeur animée du taux de réussite au CEP. -->
+                <p>Réussite au CEP</p> <!-- Libellé principal de la statistique. -->
+                <span class="stat-subtext">Enseignement Primaire</span> <!-- Complément de la statistique. -->
+            </article> <!-- Ferme la statistique du CEP. -->
+            <article class="stat-box reveal"> <!-- Ouvre la statistique du BEPC. -->
+                <i class="fa-solid fa-award" aria-hidden="true"></i> <!-- Affiche l'icône de récompense. -->
+                <h2 class="counter" data-target="100">0</h2> <!-- Valeur animée du taux de réussite au BEPC. -->
+                <p>Réussite au BEPC</p> <!-- Libellé principal de la statistique. -->
+                <span class="stat-subtext">Premier Cycle Secondaire</span> <!-- Complément de la statistique. -->
+            </article> <!-- Ferme la statistique du BEPC. -->
+            <article class="stat-box reveal"> <!-- Ouvre la statistique du BAC. -->
+                <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> <!-- Affiche l'icône de diplôme. -->
+                <h2 class="counter" data-target="100">0</h2> <!-- Valeur animée du taux de réussite au BAC. -->
+                <p>Réussite au BAC</p> <!-- Libellé principal de la statistique. -->
+                <span class="stat-subtext">Baccalauréat Général</span> <!-- Complément de la statistique. -->
+            </article> <!-- Ferme la statistique du BAC. -->
+        </section> <!-- Ferme la section des statistiques. -->
+
+        <section aria-labelledby="cycles-title"> <!-- Ouvre la section des cycles de formation. -->
+            <h2 class="section-title" id="cycles-title">Nos Cycles de Formation</h2> <!-- Titre de la section des cycles. -->
+            <div class="cycles-grid"> <!-- Crée la grille des cycles. -->
+                <a href="maternelle.html" class="cycle-card reveal"> <!-- Carte cliquable du préscolaire. -->
+                    <div class="cycle-icon"><i class="fa-solid fa-child" aria-hidden="true"></i></div> <!-- Icône du préscolaire. -->
+                    <h3>Préscolaire</h3> <!-- Nom du cycle préscolaire. -->
+                    <p>Un espace bienveillant axé sur l'éveil linguistique, l'acquisition de l'autonomie et le développement de la créativité dès 3 ans.</p> <!-- Description du préscolaire. -->
+                </a> <!-- Ferme la carte du préscolaire. -->
+                <a href="primaire.html" class="cycle-card reveal"> <!-- Carte cliquable du primaire. -->
+                    <div class="cycle-icon"><i class="fa-solid fa-book-open" aria-hidden="true"></i></div> <!-- Icône du primaire. -->
+                    <h3>Primaire</h3> <!-- Nom du cycle primaire. -->
+                    <p>Consolidation approfondie des savoirs fondamentaux et parcours internationaux multilingues au cœur de notre école.</p> <!-- Description du primaire. -->
+                </a> <!-- Ferme la carte du primaire. -->
+                <a href="college.html" class="cycle-card reveal"> <!-- Carte cliquable du postprimaire. -->
+                    <div class="cycle-icon"><i class="fa-solid fa-users" aria-hidden="true"></i></div> <!-- Icône du postprimaire. -->
+                    <h3>Postprimaire</h3> <!-- Nom du cycle postprimaire. -->
+                    <p>Développement méthodique de l'esprit critique, rigueur de travail personnelle et apprentissage renforcé.</p> <!-- Description du postprimaire. -->
+                </a> <!-- Ferme la carte du postprimaire. -->
+                <a href="lycee.html" class="cycle-card reveal"> <!-- Carte cliquable du secondaire. -->
+                    <div class="cycle-icon"><i class="fa-solid fa-building-columns" aria-hidden="true"></i></div> <!-- Icône du secondaire. -->
+                    <h3>Secondaire</h3> <!-- Nom du cycle secondaire. -->
+                    <p>Excellence académique ciblée, certifications internationales et préparation réussie aux études supérieures.</p> <!-- Description du secondaire. -->
+                </a> <!-- Ferme la carte du secondaire. -->
+            </div> <!-- Ferme la grille des cycles. -->
+        </section> <!-- Ferme la section des cycles. -->
+
+        <section aria-labelledby="actualites-title"> <!-- Ouvre la section des actualités. -->
+            <h2 class="section-title" id="actualites-title">Actualités de l'Établissement</h2> <!-- Titre de la section des actualités. -->
+            <div class="news-grid"> <!-- Crée la grille des actualités. -->
+                <a href="#" class="news-card reveal"> <!-- Carte cliquable de la première actualité. -->
+                    <div class="news-img-wrapper"> <!-- Contient l'image de la première actualité. -->
+                        <img src="images/news1.jpg" alt="Inscriptions rentrée scolaire" loading="lazy"> <!-- Image optimisée par lazy-loading. -->
+                    </div> <!-- Ferme le conteneur d'image. -->
+                    <div class="news-content"> <!-- Contient le texte de la première actualité. -->
+                        <p class="news-date">Admissions 2026</p> <!-- Affiche la catégorie ou date de l'actualité. -->
+                        <h3>Ouverture des inscriptions pour la rentrée scolaire</h3> <!-- Titre de la première actualité. -->
+                        <p>Les dossiers de candidature pour tous les cycles, de la Maternelle au Lycée, sont désormais disponibles en ligne.</p> <!-- Résumé de la première actualité. -->
+                        <span class="news-link">Lire la suite <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span> <!-- Appel à lire la suite. -->
+                    </div> <!-- Ferme le contenu de la première actualité. -->
+                </a> <!-- Ferme la première carte d'actualité. -->
+                <a href="#" class="news-card reveal"> <!-- Carte cliquable de la deuxième actualité. -->
+                    <div class="news-img-wrapper"> <!-- Contient l'image de la deuxième actualité. -->
+                        <img src="images/news2.jpg" alt="Atelier sciences et robotique" loading="lazy"> <!-- Image optimisée par lazy-loading. -->
+                    </div> <!-- Ferme le conteneur d'image. -->
+                    <div class="news-content"> <!-- Contient le texte de la deuxième actualité. -->
+                        <p class="news-date">Événement</p> <!-- Affiche la catégorie ou date de l'actualité. -->
+                        <h3>Retour sur la journée Sciences et Innovation</h3> <!-- Titre de la deuxième actualité. -->
+                        <p>Nos élèves ont partagé leurs projets scientifiques et technologiques lors de notre grande exposition annuelle.</p> <!-- Résumé de la deuxième actualité. -->
+                        <span class="news-link">Lire la suite <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span> <!-- Appel à lire la suite. -->
+                    </div> <!-- Ferme le contenu de la deuxième actualité. -->
+                </a> <!-- Ferme la deuxième carte d'actualité. -->
+                <a href="#" class="news-card reveal"> <!-- Carte cliquable de la troisième actualité. -->
+                    <div class="news-img-wrapper"> <!-- Contient l'image de la troisième actualité. -->
+                        <img src="images/news3.jpg" alt="Certifications internationales" loading="lazy"> <!-- Image optimisée par lazy-loading. -->
+                    </div> <!-- Ferme le conteneur d'image. -->
+                    <div class="news-content"> <!-- Contient le texte de la troisième actualité. -->
+                        <p class="news-date">Excellence</p> <!-- Affiche la catégorie ou date de l'actualité. -->
+                        <h3>Nouveaux partenariats et certifications linguistiques</h3> <!-- Titre de la troisième actualité. -->
+                        <p>L'école BARAKEEL renforce son cursus plurilingue en intégrant de nouvelles certifications internationales reconnues.</p> <!-- Résumé de la troisième actualité. -->
+                        <span class="news-link">Lire la suite <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span> <!-- Appel à lire la suite. -->
+                    </div> <!-- Ferme le contenu de la troisième actualité. -->
+                </a> <!-- Ferme la troisième carte d'actualité. -->
+            </div> <!-- Ferme la grille des actualités. -->
+        </section> <!-- Ferme la section des actualités. -->
+
+        <section class="testimonials-carousel-section" aria-labelledby="testimonials-title"> <!-- Ouvre la section des témoignages. -->
+            <div class="container"> <!-- Centre et limite la largeur du contenu. -->
+                <h2 class="section-title testimonials-main-title" id="testimonials-title">Ce que disent les Parents</h2> <!-- Titre principal des témoignages. -->
+                <div class="title-underline" aria-hidden="true"></div> <!-- Ligne décorative sous le titre. -->
+                <div class="testimonial-carousel-wrapper" id="testimonialWrapper"> <!-- Conteneur défilant du carrousel. -->
+                    <div class="testimonial-cards-container" id="testimonialContainer"> <!-- Contient toutes les cartes de témoignages. -->
+                        <article class="testimonial-card" data-index="0"> <!-- Carte du premier témoignage. -->
+                            <p class="testimonial-text">"Une équipe pédagogique formidable et bienveillante. Mon fils a énormément progressé en autonomie depuis sa rentrée en maternelle."</p> <!-- Texte du premier témoignage. -->
+                            <div class="testimonial-author"> <!-- Informations de l'auteur du premier témoignage. -->
+                                <h3 class="student-name">Mme Traoré K.</h3> <!-- Nom du parent témoin. -->
+                                <p class="student-program">Parent d'élève (Maternelle)</p> <!-- Cycle concerné par le témoignage. -->
+                            </div> <!-- Ferme les informations de l'auteur. -->
+                        </article> <!-- Ferme la première carte de témoignage. -->
+                        <article class="testimonial-card" data-index="1"> <!-- Carte du deuxième témoignage. -->
+                            <p class="testimonial-text">"Le sérieux et la rigueur de l'établissement se ressentent sur les résultats. 100% de réussite aux examens, c'est ce qui m'a convaincu."</p> <!-- Texte du deuxième témoignage. -->
+                            <div class="testimonial-author"> <!-- Informations de l'auteur du deuxième témoignage. -->
+                                <h3 class="student-name">M. Ouédraogo I.</h3> <!-- Nom du parent témoin. -->
+                                <p class="student-program">Parent d'élève (Lycée)</p> <!-- Cycle concerné par le témoignage. -->
+                            </div> <!-- Ferme les informations de l'auteur. -->
+                        </article> <!-- Ferme la deuxième carte de témoignage. -->
+                        <article class="testimonial-card" data-index="2"> <!-- Carte du troisième témoignage. -->
+                            <p class="testimonial-text">"L'apprentissage renforcé des langues dès le plus jeune âge donne une vraie ouverture internationale à nos enfants. Je recommande vivement !"</p> <!-- Texte du troisième témoignage. -->
+                            <div class="testimonial-author"> <!-- Informations de l'auteur du troisième témoignage. -->
+                                <h3 class="student-name">Mme Sawadogo S.</h3> <!-- Nom du parent témoin. -->
+                                <p class="student-program">Parent d'élève (Primaire)</p> <!-- Cycle concerné par le témoignage. -->
+                            </div> <!-- Ferme les informations de l'auteur. -->
+                        </article> <!-- Ferme la troisième carte de témoignage. -->
+                        <article class="testimonial-card" data-index="3"> <!-- Carte du quatrième témoignage. -->
+                            <p class="testimonial-text">"Les activités extra-scolaires et le suivi personnalisé aident vraiment les enfants à s'épanouir en dehors des cours classiques."</p> <!-- Texte du quatrième témoignage. -->
+                            <div class="testimonial-author"> <!-- Informations de l'auteur du quatrième témoignage. -->
+                                <h3 class="student-name">M. Diallo A.</h3> <!-- Nom du parent témoin. -->
+                                <p class="student-program">Parent d'élève (Collège)</p> <!-- Cycle concerné par le témoignage. -->
+                            </div> <!-- Ferme les informations de l'auteur. -->
+                        </article> <!-- Ferme la quatrième carte de témoignage. -->
+                        <article class="testimonial-card" data-index="4"> <!-- Carte du cinquième témoignage. -->
+                            <p class="testimonial-text">"Une infrastructure moderne et un environnement sécurisé. En tant que parent, c'est un vrai soulagement au quotidien."</p> <!-- Texte du cinquième témoignage. -->
+                            <div class="testimonial-author"> <!-- Informations de l'auteur du cinquième témoignage. -->
+                                <h3 class="student-name">Mme Koné F.</h3> <!-- Nom du parent témoin. -->
+                                <p class="student-program">Parent d'élève (Maternelle)</p> <!-- Cycle concerné par le témoignage. -->
+                            </div> <!-- Ferme les informations de l'auteur. -->
+                        </article> <!-- Ferme la cinquième carte de témoignage. -->
+                        <article class="testimonial-card" data-index="5"> <!-- Carte du sixième témoignage. -->
+                            <p class="testimonial-text">"Le corps professoral est toujours disponible pour répondre à nos questions et collaborer pour la réussite de nos enfants."</p> <!-- Texte du sixième témoignage. -->
+                            <div class="testimonial-author"> <!-- Informations de l'auteur du sixième témoignage. -->
+                                <h3 class="student-name">M. Sanon O.</h3> <!-- Nom du parent témoin. -->
+                                <p class="student-program">Parent d'élève (Primaire)</p> <!-- Cycle concerné par le témoignage. -->
+                            </div> <!-- Ferme les informations de l'auteur. -->
+                        </article> <!-- Ferme la sixième carte de témoignage. -->
+                        <article class="testimonial-card" data-index="6"> <!-- Carte du septième témoignage. -->
+                            <p class="testimonial-text">"La préparation au baccalauréat est excellente. Ma fille a abordé ses examens avec énormément de confiance et de sérénité."</p> <!-- Texte du septième témoignage. -->
+                            <div class="testimonial-author"> <!-- Informations de l'auteur du septième témoignage. -->
+                                <h3 class="student-name">Mme Zoungrana H.</h3> <!-- Nom du parent témoin. -->
+                                <p class="student-program">Parent d'élève (Lycée)</p> <!-- Cycle concerné par le témoignage. -->
+                            </div> <!-- Ferme les informations de l'auteur. -->
+                        </article> <!-- Ferme la septième carte de témoignage. -->
+                        <article class="testimonial-card" data-index="7"> <!-- Carte du huitième témoignage. -->
+                            <p class="testimonial-text">"L'accent mis sur les valeurs de discipline et de travail donne de super repères à nos enfants pour leur futur parcours."</p> <!-- Texte du huitième témoignage. -->
+                            <div class="testimonial-author"> <!-- Informations de l'auteur du huitième témoignage. -->
+                                <h3 class="student-name">M. Barry T.</h3> <!-- Nom du parent témoin. -->
+                                <p class="student-program">Parent d'élève (Collège)</p> <!-- Cycle concerné par le témoignage. -->
+                            </div> <!-- Ferme les informations de l'auteur. -->
+                        </article> <!-- Ferme la huitième carte de témoignage. -->
+                        <article class="testimonial-card" data-index="8"> <!-- Carte du neuvième témoignage. -->
+                            <p class="testimonial-text">"Mon enfant adore venir à l'école chaque matin. Les méthodes d'apprentissage ludiques en maternelle font des merveilles."</p> <!-- Texte du neuvième témoignage. -->
+                            <div class="testimonial-author"> <!-- Informations de l'auteur du neuvième témoignage. -->
+                                <h3 class="student-name">Mme Compaoré C.</h3> <!-- Nom du parent témoin. -->
+                                <p class="student-program">Parent d'élève (Maternelle)</p> <!-- Cycle concerné par le témoignage. -->
+                            </div> <!-- Ferme les informations de l'auteur. -->
+                        </article> <!-- Ferme la neuvième carte de témoignage. -->
+                        <article class="testimonial-card" data-index="9"> <!-- Carte du dixième témoignage. -->
+                            <p class="testimonial-text">"Une communication claire et transparente via les rapports périodiques. On sait exactement comment évoluent nos enfants."</p> <!-- Texte du dixième témoignage. -->
+                            <div class="testimonial-author"> <!-- Informations de l'auteur du dixième témoignage. -->
+                                <h3 class="student-name">M. Ilboudo P.</h3> <!-- Nom du parent témoin. -->
+                                <p class="student-program">Parent d'élève (Primaire)</p> <!-- Cycle concerné par le témoignage. -->
+                            </div> <!-- Ferme les informations de l'auteur. -->
+                        </article> <!-- Ferme la dixième carte de témoignage. -->
+                    </div> <!-- Ferme le conteneur des cartes de témoignages. -->
+                </div> <!-- Ferme le carrousel horizontal. -->
+                <div class="carousel-pagination" id="carouselPagination" aria-label="Pagination des témoignages"></div> <!-- Contient les points de navigation du carrousel générés en JavaScript. -->
+            </div> <!-- Ferme le conteneur centré. -->
+        </section> <!-- Ferme la section des témoignages. -->
+    </main> <!-- Ferme le contenu principal. -->
+
+    <footer class="site-footer"> <!-- Ouvre le pied de page unique du site. -->
+        <div class="footer-cols"> <!-- Organise le pied de page en colonnes. -->
+            <section class="footer-col"> <!-- Ouvre la colonne des liens rapides. -->
+                <h2>LIENS RAPIDES</h2> <!-- Titre de la colonne des liens rapides. -->
+                <a href="fiche-de-renseignement.pdf" target="_blank" rel="noopener">Fiche de Renseignement (PDF)</a> <!-- Lien sécurisé vers le PDF. -->
+                <a href="maternelle.html">Préscolaire</a> <!-- Lien rapide vers le préscolaire. -->
+                <a href="primaire.html">Primaire</a> <!-- Lien rapide vers le primaire. -->
+                <a href="college.html">Postprimaire</a> <!-- Lien rapide vers le postprimaire. -->
+                <a href="lycee.html">Secondaire</a> <!-- Lien rapide vers le secondaire. -->
+            </section> <!-- Ferme la colonne des liens rapides. -->
+            <section class="footer-col"> <!-- Ouvre la colonne de l'adresse. -->
+                <h2>ADRESSE</h2> <!-- Titre de la colonne d'adresse. -->
+                <a href="https://maps.google.com/?q=Kossodo,+Ouagadougou" target="_blank" rel="noopener" class="footer-map-link"> <!-- Lien sécurisé vers Google Maps. -->
+                    <span class="footer-place"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Kossodo</span> <!-- Affiche le quartier avec une icône. -->
+                    <span class="footer-city">Ouagadougou, Burkina Faso</span> <!-- Affiche la ville et le pays. -->
+                </a> <!-- Ferme le lien Google Maps. -->
+            </section> <!-- Ferme la colonne de l'adresse. -->
+            <section class="footer-col"> <!-- Ouvre la colonne des horaires. -->
+                <h2>NOS HORAIRES</h2> <!-- Titre de la colonne des horaires. -->
+                <p><strong>Lun - Ven :</strong> 07h-12h | 15h-17h</p> <!-- Horaires du lundi au vendredi. -->
+                <p><strong>Samedi :</strong> 08h - 11h30</p> <!-- Horaires du samedi. -->
+            </section> <!-- Ferme la colonne des horaires. -->
+            <section class="footer-col"> <!-- Ouvre la colonne de contact. -->
+                <h2>CONTACT</h2> <!-- Titre de la colonne de contact. -->
+                <p><i class="fa-solid fa-phone" aria-hidden="true"></i> <strong>Téléphones :</strong></p> <!-- Libellé des numéros de téléphone. -->
+                <a href="tel:+22674827448">+226 74 82 74 48</a> <!-- Numéro de téléphone cliquable. -->
+                <a href="tel:+22672079943">+226 72 07 99 43</a> <!-- Numéro de téléphone cliquable. -->
+                <a href="tel:+22679757799">+226 79 75 77 99</a> <!-- Numéro de téléphone cliquable. -->
+                <a href="mailto:contact@barakeel.com" class="email-link" data-email="contact@barakeel.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> contact@barakeel.com</a> <!-- Lien email enrichi par JavaScript pour ouvrir Gmail ou l'application mail avec le destinataire prérempli. -->
+            </section> <!-- Ferme la colonne de contact. -->
+        </div> <!-- Ferme les colonnes du pied de page. -->
+        <div class="footer-bottom"> <!-- Ouvre la zone basse du pied de page. -->
+            <p>&copy; 2026 École BARAKEEL - Tous droits réservés.</p> <!-- Affiche la mention de droits d'auteur. -->
+        </div> <!-- Ferme la zone basse du pied de page. -->
+    </footer> <!-- Ferme le pied de page. -->
+
+    <script> // Ouvre le script principal intégré de la page.
+        document.addEventListener("DOMContentLoaded", () => { // Attend que le HTML soit chargé avant de manipuler la page.
+            const revealElements = document.querySelectorAll(".reveal"); // Sélectionne tous les éléments à révéler au scroll.
+            const counters = document.querySelectorAll(".counter"); // Sélectionne tous les compteurs numériques.
+            const wrapper = document.getElementById("testimonialWrapper"); // Récupère le conteneur scrollable des témoignages.
+            const cards = document.querySelectorAll(".testimonial-card"); // Récupère toutes les cartes de témoignages.
+            const pagination = document.getElementById("carouselPagination"); // Récupère le conteneur des points de pagination.
+            const emailLinks = document.querySelectorAll(".email-link[data-email]"); // Sélectionne les liens email à ouvrir intelligemment.
+
+            const formatCounterValue = (value, target) => { // Crée une fonction unique pour formater les valeurs animées.
+                if (target <= 25) return `${value} ans`; // Ajoute "ans" pour les années d'existence.
+                if (target === 15000) return `${value.toLocaleString("fr-FR")}+`; // Ajoute le séparateur français et le signe plus.
+                if (target === 100) return `${value}%`; // Ajoute le symbole pour les pourcentages.
+                return String(value); // Retourne la valeur brute pour les autres cas.
+            }; // Termine la fonction de formatage.
+
+            const animateCounter = counter => { // Anime un compteur donné.
+                const target = Number(counter.dataset.target || 0); // Lit la valeur finale depuis data-target.
+                const duration = 2000; // Définit la durée de l'animation en millisecondes.
+                const startTime = performance.now(); // Capture le moment de départ de l'animation.
+
+                const update = currentTime => { // Définit la fonction exécutée à chaque frame.
+                    const elapsed = currentTime - startTime; // Calcule le temps écoulé depuis le départ.
+                    const progress = Math.min(elapsed / duration, 1); // Limite la progression entre 0 et 1.
+                    const currentValue = Math.floor(target * progress); // Calcule la valeur courante selon la progression.
+                    counter.textContent = formatCounterValue(currentValue, target); // Affiche la valeur formatée dans la page.
+
+                    if (progress < 1) { // Vérifie si l'animation n'est pas terminée.
+                        requestAnimationFrame(update); // Continue l'animation à la prochaine frame.
+                    } else { // Gère la fin exacte de l'animation.
+                        counter.textContent = formatCounterValue(target, target); // Force la valeur finale exacte.
+                    } // Termine la condition de fin d'animation.
+                }; // Termine la fonction de mise à jour.
+
+                requestAnimationFrame(update); // Lance l'animation du compteur.
+            }; // Termine la fonction d'animation de compteur.
+
+            const handleScrollAnimations = () => { // Gère les animations déclenchées par le scroll.
+                const windowHeight = window.innerHeight; // Lit la hauteur visible de la fenêtre.
+
+                revealElements.forEach(element => { // Parcourt chaque élément à révéler.
+                    const elementTop = element.getBoundingClientRect().top; // Mesure la position verticale de l'élément.
+                    if (elementTop < windowHeight - 100) element.classList.add("active"); // Active l'animation si l'élément entre dans la zone visible.
+                }); // Termine le parcours des éléments à révéler.
+
+                counters.forEach(counter => { // Parcourt chaque compteur numérique.
+                    const counterTop = counter.getBoundingClientRect().top; // Mesure la position verticale du compteur.
+                    const isVisible = counterTop < windowHeight - 50; // Vérifie si le compteur est assez visible.
+                    const hasStarted = counter.classList.contains("started"); // Vérifie si le compteur a déjà été animé.
+
+                    if (isVisible && !hasStarted) { // Lance l'animation seulement une fois.
+                        counter.classList.add("started"); // Marque le compteur comme déjà lancé.
+                        animateCounter(counter); // Anime la valeur du compteur.
+                    } // Termine la condition de lancement du compteur.
+                }); // Termine le parcours des compteurs.
+            }; // Termine la fonction des animations au scroll.
+
+            const updateActiveDot = dots => { // Met à jour le point actif du carrousel.
+                let activeIndex = 0; // Initialise l'index actif.
+                let minDistance = Infinity; // Initialise la distance minimale trouvée.
+                const wrapperLeft = wrapper.getBoundingClientRect().left; // Calcule une seule fois la position gauche du wrapper.
+
+                cards.forEach((card, index) => { // Parcourt chaque carte de témoignage.
+                    const distance = Math.abs(card.getBoundingClientRect().left - wrapperLeft); // Mesure l'écart entre la carte et le bord du carrousel.
+                    if (distance < minDistance) { // Vérifie si cette carte est la plus proche du bord.
+                        minDistance = distance; // Mémorise la plus petite distance.
+                        activeIndex = index; // Mémorise l'index correspondant.
+                    } // Termine le test de distance minimale.
+                }); // Termine le parcours des cartes.
+
+                dots.forEach(dot => dot.classList.remove("active")); // Retire l'état actif de tous les points.
+                dots[activeIndex]?.classList.add("active"); // Active le point correspondant à la carte visible.
+            }; // Termine la fonction de mise à jour des points.
+
+            if (wrapper && pagination && cards.length > 0) { // Vérifie que le carrousel existe avant d'ajouter les interactions.
+                cards.forEach((card, index) => { // Crée un point de pagination pour chaque carte.
+                    const button = document.createElement("button"); // Crée un bouton accessible pour le point.
+                    button.type = "button"; // Empêche le bouton de soumettre un formulaire par défaut.
+                    button.className = index === 0 ? "pagination-dot active" : "pagination-dot"; // Définit la classe du point et l'état actif initial.
+                    button.setAttribute("aria-label", `Afficher le témoignage ${index + 1}`); // Ajoute un libellé accessible pour les lecteurs d'écran.
+                    button.addEventListener("click", () => { // Ajoute l'action au clic sur un point.
+                        const wrapperRect = wrapper.getBoundingClientRect(); // Récupère la position actuelle du carrousel.
+                        const cardRect = card.getBoundingClientRect(); // Récupère la position actuelle du témoignage ciblé.
+                        const targetLeft = wrapper.scrollLeft + cardRect.left - wrapperRect.left - (wrapper.clientWidth - card.clientWidth) / 2; // Calcule la position exacte à atteindre.
+                        wrapper.style.scrollSnapType = "none"; // Désactive temporairement le snap pour éviter l'arrêt sur une carte intermédiaire.
+                        wrapper.scrollTo({ left: Math.max(targetLeft, 0), behavior: "auto" }); // Va directement au commentaire lié au point cliqué.
+                        pagination.querySelectorAll(".pagination-dot").forEach(dot => dot.classList.remove("active")); // Retire l'état actif des autres points.
+                        button.classList.add("active"); // Active immédiatement le point cliqué.
+                        window.setTimeout(() => { wrapper.style.scrollSnapType = ""; }, 80); // Réactive le snap après le déplacement direct.
+                    }); // Termine l'écouteur du clic.
+                    pagination.appendChild(button); // Ajoute le point dans la pagination.
+                }); // Termine la création des points.
+
+                const dots = pagination.querySelectorAll(".pagination-dot"); // Récupère les points créés.
+                wrapper.addEventListener("scroll", () => updateActiveDot(dots), { passive: true }); // Met à jour le point actif pendant le scroll sans bloquer le navigateur.
+            } // Termine la configuration du carrousel.
+
+            emailLinks.forEach(link => { // Parcourt chaque lien email enrichi.
+                link.addEventListener("click", event => { // Intercepte le clic pour choisir la meilleure application mail.
+                    event.preventDefault(); // Empêche le navigateur d'ouvrir immédiatement le mailto classique.
+
+                    const email = link.dataset.email; // Récupère l'adresse email depuis l'attribut data-email.
+                    const encodedEmail = encodeURIComponent(email); // Encode l'email pour l'utiliser dans une URL.
+                    const userAgent = navigator.userAgent; // Lit le navigateur et l'appareil utilisés par le visiteur.
+                    const isAndroid = /Android/i.test(userAgent); // Détecte les téléphones et tablettes Android.
+                    const isIos = /iPhone|iPad|iPod/i.test(userAgent); // Détecte les appareils Apple mobiles.
+                    const mailtoUrl = `mailto:${encodedEmail}`; // Prépare le lien mail universel avec destinataire prérempli.
+                    const gmailWebUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodedEmail}`; // Prépare Gmail web avec le destinataire prérempli.
+
+                    if (isAndroid) { // Sur Android, tente d'ouvrir directement l'application Gmail.
+                        window.location.href = `intent://compose?to=${encodedEmail}#Intent;scheme=googlegmail;package=com.google.android.gm;end`; // Lance Gmail Android si l'application existe.
+                        setTimeout(() => { window.location.href = mailtoUrl; }, 800); // Revient vers l'application mail par défaut si Gmail ne s'ouvre pas.
+                        return; // Arrête la fonction après la tentative Android.
+                    } // Termine le cas Android.
+
+                    if (isIos) { // Sur iPhone et iPad, tente d'ouvrir l'application Gmail.
+                        window.location.href = `googlegmail://co?to=${encodedEmail}`; // Lance Gmail iOS si l'application existe.
+                        setTimeout(() => { window.location.href = mailtoUrl; }, 800); // Revient vers l'application mail par défaut si Gmail ne s'ouvre pas.
+                        return; // Arrête la fonction après la tentative iOS.
+                    } // Termine le cas iOS.
+
+                    window.open(gmailWebUrl, "_blank", "noopener"); // Sur ordinateur, ouvre Gmail web dans un nouvel onglet avec le destinataire prérempli.
+                }); // Termine l'écouteur du clic email.
+            }); // Termine la configuration des liens email.
+
+            window.addEventListener("scroll", handleScrollAnimations, { passive: true }); // Déclenche les animations au scroll de façon performante.
+            handleScrollAnimations(); // Lance une première vérification dès le chargement de la page.
+        }); // Termine l'écouteur DOMContentLoaded.
+    </script> <!-- Ferme le script principal de la page. -->
+</body> <!-- Ferme le contenu visible de la page. -->
+</html> <!-- Ferme le document HTML. -->
+
+
